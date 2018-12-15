@@ -11,7 +11,7 @@ import com.github.pagehelper.PageHelper;
 import com.pinyougou.mapper.TbBrandMapper;
 import com.pinyougou.pojo.TbBrand;
 import com.pinyougou.pojo.TbBrandExample;
-import com.pinyougou.sellergoods.BrandService;
+import com.pinyougou.sellergoods.service.BrandService;
 
 @Service
 public class BrandServiceImpl implements BrandService {
