@@ -19,4 +19,8 @@ http://www.springframework.org/schema/context/spring-context.xsd">
     <dubbo:registry address="zookeeper://192.168.25.135:2181"/>
     <dubbo:annotation package="com.pinyougou.sellergoods.service.impl"/>
 
+    <dubbo:reference interface="com.pinyougou.sellergoods.service.impl.BrandServiceImpl">
+        <dubbo:method name="findPage1" timeout="60000"/>
+    </dubbo:reference>
+
 </beans>
